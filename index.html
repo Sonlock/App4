@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación Web</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .contenedor a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: #eee;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .contenedor a:hover {
+            transform: scale(1.1);
+        }
+
+        .contenedor img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.scrollTo(0, 1);
+        }, 2000);
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <a href="http://www.google.cl"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"></a>
+        <a href="http://www.youtube.com"><img src="https://www.youtube.com/s/desktop/ea34bfe6/img/favicon_144.png" alt="YouTube"></a>
+        <a href="http://www.enel.cl"><img src="https://www.enel.cl/etc/designs/enel-chile-portal/resources/img/favicon.png" alt="Enel"></a>
+        <a href="http://www.aguasandinas.cl"><img src="https://www.aguasandinas.cl/wp-content/uploads/2020/11/favicon-512x512.png" alt="Aguas Andinas"></a>
+        <a href="http://www.vtr.cl"><img src="https://www.vtr.com/content/dam/vtr_homepage/images/favicon.ico" alt="VTR"></a>
+        <a href="http://www.wom.cl"><img src="https://www.wom.cl/wp-content/uploads/2021/02/cropped-wom-logo-icon-32x32.png" alt="WOM"></a>
+        <a href="http://www.metrogas.cl"><img src="https://www.metrogas.cl/assets/img/favicon.ico" alt="Metrogas"></a>
+        <a href="http://www.movistar.cl"><img src="https://www.movistar.cl/favicon.ico" alt="Movistar"></a>
+        <a href="http://www.iacc.cl"><img src="https://www.iacc.cl/wp-content/uploads/2019/11/Logo-iacc-32x32px.png" alt="IACC"></a>
+        <a href="http://www.tvn.cl"><img src="https://www.tvn.cl/favicon.ico" alt="TVN"></a>
+    </div>
+</body>
+</html>
